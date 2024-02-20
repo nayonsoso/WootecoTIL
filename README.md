@@ -1,10 +1,10 @@
 # 🪐
 
 ---
-| Date | Content | IsComplete | Journal |
+| 날짜 | 내용 | 완료 | | 정성 |
 |--------|--------|--------|--------|
-| 📆24.02.14 WED | [함수형 인터페이스](https://github.com/nayonsoso/WIL/blob/main/level1/1-car-racing-1.md#) | | 회고 |
-|  | @FunctionalInterface | | |
+| 📆[24.02.14 WED](https://github.com/nayonsoso/WIL/blob/main/level1/1-car-racing-1.md) | 함수형 인터페이스 | | 회고 |
+|  | 함수형 인터페이스 API | | |
 |  | 정적 팩토링 메소드의 네이밍 규칙 | | |
 | 📆24.02.14 WED | Dto의 역할 | | 회고 |
 |  | IntelliJ에서 테스트 커버리지 보는 방법 | | |
