@@ -3,7 +3,7 @@
 ---
 | Date | Content | IsComplete | Journal |
 |--------|--------|--------|--------|
-| 📆24.02.14 WED | [함수형 인터페이스](https://github.com/nayonsoso/WIL/blob/main/level1/1-car-racing-1.md#-supplier) | | 회고 |
+| 📆24.02.14 WED | [함수형 인터페이스](https://github.com/nayonsoso/WIL/blob/main/level1/1-car-racing-1.md#) | | 회고 |
 |  | @FunctionalInterface | | |
 |  | 정적 팩토링 메소드의 네이밍 규칙 | | |
 | 📆24.02.14 WED | Dto의 역할 | | 회고 |
