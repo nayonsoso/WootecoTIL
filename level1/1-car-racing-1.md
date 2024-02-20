@@ -34,6 +34,9 @@
     - 따라서 자바에서는 미리 함수형 인터페이스 이름을 정해서 제공한다.
 <br>
 
+![image](https://github.com/nayonsoso/WIL/assets/76177848/513644bf-f49f-434e-a7dc-9d506c70e14d)
+
+
 ## 🔶 Functional Interface API
 ---
 
