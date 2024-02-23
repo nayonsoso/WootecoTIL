@@ -51,14 +51,14 @@
 | Runnable         |          |         | 아무 인자도 받지 않고, 반환도 없는 작업을 실행               | 스레드 실행  |
 | Supplier<T>      |          | \<T>     | 값을 제공하지만, 인자는 받지 않음. 항상 같은 타입의 값을 반환 | 날짜 생성    |
 | Consumer<T>      | \<T>      |         | 한 타입의 값을 소비하고, 반환하지 않음                       | 값 출력      |
-| Predicate<T>     | <T>      | Boolean | 한 타입의 값이 특정 조건을 만족하는지 검사                   | 조건 검사    |
-| Function<T, R>   | <T>      | <R>     | 한 타입을 받아 다른 타입으로 변환                            | 문자열을 길이로 변환 |
-| UnaryOperator<T> | <T>      | <T>     | 같은 타입의 값을 받아 동일한 타입의 결과를 반환              | 숫자 두 배 증가 |
-| BinaryOperator<T>| <T, T>   | <T>     | 두 같은 타입의 값을 받아 동일한 타입의 하나의 값으로 결합    | 두 수의 합   |
-| BiConsumer<T, U> | <T, U>   |         | 두 다른 타입의 값을 받아 처리하고, 반환하지 않음             | 키-값 쌍 출력 |
-| BiPredicate<T, U>| <T, U>   | Boolean | 두 다른 타입의 값이 특정 조건을 만족하는지 검사              | 두 조건 비교  |
-| BiFunction<T, U, R>| <T, U> | <R>     | 두 다른 타입의 값을 받아, 다른 타입의 값을 반환              | 두 값의 합을 문자열로 변환 |
-| Comparator<T>    | <T, T>   | int     | 두 같은 타입의 값을 비교하여 순서를 정함                     | 리스트 정렬  |
+| Predicate<T>     | \<T>      | Boolean | 한 타입의 값이 특정 조건을 만족하는지 검사                   | 조건 검사    |
+| Function<T, R>   | \<T>      | \<R>     | 한 타입을 받아 다른 타입으로 변환                            | 문자열을 길이로 변환 |
+| UnaryOperator<T> | \<T>      | \<T>     | 같은 타입의 값을 받아 동일한 타입의 결과를 반환              | 숫자 두 배 증가 |
+| BinaryOperator<T>| <T,T>   | \<T>     | 두 같은 타입의 값을 받아 동일한 타입의 하나의 값으로 결합    | 두 수의 합   |
+| BiConsumer<T, U> | <T,U>   |         | 두 다른 타입의 값을 받아 처리하고, 반환하지 않음             | 키-값 쌍 출력 |
+| BiPredicate<T, U>| <T,U>   | Boolean | 두 다른 타입의 값이 특정 조건을 만족하는지 검사              | 두 조건 비교  |
+| BiFunction<T, U, R>| <T,U> | \<R>     | 두 다른 타입의 값을 받아, 다른 타입의 값을 반환              | 두 값의 합을 문자열로 변환 |
+| Comparator<T>    | <T,T>   | int     | 두 같은 타입의 값을 비교하여 순서를 정함                     | 리스트 정렬  |
 
 <br>
 
@@ -72,11 +72,44 @@
 | Function<T, R>   | `.map(x -> x.toString())`                                    | 하나의 인자를 받아 결과를 반환. 입력과 출력 타입이 다름.    |
 | UnaryOperator<T> | `.map(String::toUpperCase)`                                  | 하나의 인자를 받아 동일한 타입의 결과를 반환. 변형에 사용.   |
 | BinaryOperator<T>| `.reduce(0, Integer::sum)`                                   | 동일한 타입의 두 인자를 받아 하나의 결과를 반환. 스트림의 요소들을 합치기에 사용. |
-| BiConsumer<T, U> | `(k, v) -> System.out.println("Key: " + k + ", Value: " + v)`| 두 인자를 받아서 반환값 없이 처리. 두 요소의 소비에 사용.    |
+| BiConsumer<T, U> | `(k, v)-> print(k + "," + v)`| 두 인자를 받아서 반환값 없이 처리. 두 요소의 소비에 사용.    |
 
+<br>
 
 ## 🔶 정적 팩토링 메소드의 네이밍 규칙
 ---
+#### 🔸 Intro.
+- 정적 팩토리 메서드란,
+  - Static Method를 통해 간접적으로 생성자를 호출하는 메서드이다.
+- 왜 `팩토리`인가?
+  -  디자인 패턴 중 하나인 팩토리 개념을 사용했기 때문이다.
+    
+<br>
+
 #### 🔸 내용
-- 정적 팩토리 메서드(Static Factory Method) 패턴은 개발자가 구성한 Static Method를 통해 간접적으로 생성자를 호출하는 객체를 생성하는 디자인 패턴이다. 
-출처: https://inpa.tistory.com/entry/GOF-💠-정적-팩토리-메서드-생성자-대신-사용하자 [Inpa Dev 👨‍💻:티스토리]
+- 정적 팩토리 메서드 네이밍에는 컨벤션이 존재한다.
+  - 다른 정적 메서드와 역할을 구분지어야하기 때문이다.
+    - cf. 정적 메서드는 그낭 `static` 메서드이고, 정적 팩토리 메서드는 `객체를 생성하는 static` 메서드이다.
+  - 이 네이밍 컨벤션은 단순히 선호도를 넘어 법칙으로 사용된다.
+  - 따라서 네이밍을 알아두는 것이 중요하다.
+- 정적 팩토리 메서드에서 사용되는 네이밍 단어 종류는 다음과 같다.
+  - `from` : 매개변수를 하나 받아서 해당 타입의 인스턴스를 반환
+  - `of` : 여러 매개변수를 받아 적합한 타입의 인스턴스를 반환
+  - `getInstance` | `instance` : 인스턴스를 생성. 이전에 반환했던 것과 같을 수 있음
+  - `newInstance` | `create` : 항상 새로운 인스턴스를 생성
+  - `get[OrderType]` : 다른 타입의 인스턴스를 생성. 이전에 반환했던 것과 같을 수 있음
+  - `new[OrderType]` : 항상 다른 타입의 새로운 인스턴스를 생성
+
+<br>
+
+#### 🔸 예시
+
+- from : `Date d = Date.from(instant);`
+- of : `List<String> names = List.of("John", "Doe");`
+- getInstance : `Calendar c = Calendar.getInstance();`
+
+<br>
+
+참고 블로그 : 
+- https://inpa.tistory.com/entry/GOF-%F0%9F%92%A0-%EC%A0%95%EC%A0%81-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EB%A9%94%EC%84%9C%EB%93%9C-%EC%83%9D%EC%84%B1%EC%9E%90-%EB%8C%80%EC%8B%A0-%EC%82%AC%EC%9A%A9%ED%95%98%EC%9E%90
+- https://tecoble.techcourse.co.kr/post/2020-05-26-static-factory-method/
