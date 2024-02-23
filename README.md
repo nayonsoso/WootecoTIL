@@ -11,20 +11,17 @@
 | 📆[24.02.14 WED](https://github.com/nayonsoso/WIL/blob/main/level1/1-car-racing-1.md) | 함수형 인터페이스 | ✅ | ⭐ |
 |  | 함수형 인터페이스 API | ✅ | |
 |  | 정적 팩토링 메소드의 네이밍 규칙 | ✅ | |
-| 📆24.02.14 WED | God Class를 만들면 안되는 이유 | |  |
-|  | Dto의 역할 | | |
-|  | IntelliJ에서 테스트 커버리지 보는 방법 | | |
-|  | IntelliJ에서 프로젝트의 모든 파일 한번에 정렬하는 방법 | | |
-| 📆24.02.15 THU | rebase란 | | 회고 |
+| 📆[24.02.15 THU](https://github.com/nayonsoso/WIL/blob/main/level1/1-car-racing-2.md) | God Class를 만들면 안되는 이유 | ✅ | ⭐ |
+|  | Dto의 역할 | ✅ | |
+| 📆[24.02.16 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/1-car-racing-3.md) | rebase란 | | |
 | | 커밋 메세지 수정하는 방법 | | |
-| 📆24.02.16 FRI | | |  |
-|  | 방어적 복사 | | |
-|  | 테스트 - Fixture | | |
-| 📆24.02.19 MON | | |  |
+| 📆[24.02.19 MON](https://github.com/nayonsoso/WIL/blob/main/level1/1-car-racing-4.md) | IntelliJ에서 테스트 커버리지 보는 방법 | ✅ | |
+|  | IntelliJ에서 프로젝트의 모든 파일 한번에 정렬하는 방법 | ✅ | |
 | 📆24.02.20 TUE | TDD | |  |
 |  | 인텔리제이의 유용한 여러 단축키 | | |
 | 📆24.02.21 WED | | |  |
-
+|  | 방어적 복사 | | |
+|  | 테스트 - Fixture | | |
 | 📆24.02.22 THU | | |  |
 | 📆24.02.23 FRI | | |  |
 | 📆24.02.26 MON | | |  |
