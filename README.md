@@ -27,7 +27,7 @@
 | 📆[24.02.19 MON](https://github.com/nayonsoso/WIL/blob/main/level1/1-car-racing-4.md) | IntelliJ에서 테스트 커버리지 보는 방법 | ✅ | |
 |  | IntelliJ에서 프로젝트의 모든 파일 한번에 정렬하는 방법 | ✅ | |
 
-### PR
+### 단계별 PR
 - 1단계 자동차 경주 구현 PR [링크](https://github.com/woowacourse/java-racingcar/pull/682)
 - 2단계 리팩토링 PR [링크](https://github.com/woowacourse/java-racingcar/pull/814)
 
