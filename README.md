@@ -43,8 +43,8 @@
 
 | 날짜 | 내용 | 완료 | 중요 |
 |--------|--------|--------|--------|
-| 📆[24.02.20 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-1.md) | TDD | |  |
-|  | 인텔리제이의 유용한 여러 단축키 | | |
+| 📆[24.02.20 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-1.md) | TDD | ✅ |  |
+|  | 인텔리제이의 유용한 여러 단축키 | ✅ | |
 | 📆[24.02.21 WED](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-2.md) | record | |  |
 |  |  불변의 객체라면 class보다 record를 쓰는게 무조건 이득일까? | | |
 | 📆[24.02.22 THU](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-3.md) | 테스트 - Fixture | |  |
