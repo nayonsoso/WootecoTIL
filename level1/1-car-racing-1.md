@@ -22,8 +22,10 @@
 #### 🔸 `@FuntionalInterface` 어노테이션
   - Functional Interface라는 것을 명시하기 위해 사용한다. 
   - `@FunctionalInterface`를 사용하면 부적절한 메서드를 추가하거나 다른 인터페이스를 상속받으면 컴파일 에러가 발생한다.
+    <img src="https://github.com/nayonsoso/WIL/assets/76177848/513644bf-f49f-434e-a7dc-9d506c70e14d" width="500" height="300">
 
-<img src="https://github.com/nayonsoso/WIL/assets/76177848/513644bf-f49f-434e-a7dc-9d506c70e14d" width="500" height="300">
+<br>
+
 
 ## 🔶 Functional Interface API
 ---
