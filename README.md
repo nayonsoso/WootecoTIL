@@ -13,7 +13,7 @@
 
 ---
 
-## 🚀 1) 자동차 경주 미션
+## 🚀 1) 자동차 경주
 
 | 날짜 | 내용 | 완료 | 중요 |
 |--------|--------|--------|--------|
@@ -22,8 +22,8 @@
 |  | 정적 팩토링 메소드의 네이밍 규칙 | ✅ | |
 | 📆[24.02.15 THU](https://github.com/nayonsoso/WIL/blob/main/level1/1-car-racing-2.md) | God Class를 만들면 안되는 이유 | ✅ | ⭐ |
 |  | Dto의 역할 | ✅ | |
-| 📆[24.02.16 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/1-car-racing-3.md) | rebase란 | | |
-| | 커밋 메세지 수정하는 방법 | | |
+| 📆[24.02.16 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/1-car-racing-3.md) | rebase란 |✅| |
+| | 커밋 메세지 수정하는 방법 |✅| |
 | 📆[24.02.19 MON](https://github.com/nayonsoso/WIL/blob/main/level1/1-car-racing-4.md) | IntelliJ에서 테스트 커버리지 보는 방법 | ✅ | |
 |  | IntelliJ에서 프로젝트의 모든 파일 한번에 정렬하는 방법 | ✅ | |
 
@@ -39,24 +39,40 @@
 
 <br>
 
-## 🚀 2) 사다리 타기 미션
+## 🚀 2) 사다리 타기
 
 | 날짜 | 내용 | 완료 | 중요 |
 |--------|--------|--------|--------|
 | 📆[24.02.20 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-1.md) | TDD | |  |
 |  | 인텔리제이의 유용한 여러 단축키 | | |
-| 📆24.02.21 WED | | |  |
-|  | 방어적 복사 | | |
-|  | 테스트 - Fixture | | |
-| 📆24.02.22 THU | | |  |
-|레코드|
-| 📆24.02.23 FRI | | |  |
-| 피드백 받은 내용 |
-| 📆24.02.26 MON | | |  |
-| 📆24.02.27 TUE | | |  |
-| 📆24.02.28 WED | | |  |
-| 📆24.02.29 THU | | |  |
-| 📆24.03.04 MON | | |  |
+| 📆[24.02.21 WED](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-2.md) | record | |  |
+|  |  불변의 객체라면 class보다 record를 쓰는게 무조건 이득일까? | | |
+| 📆[24.02.22 THU](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-3.md) | 테스트 - Fixture | |  |
+|  | csv 테스트 | | |
+| 📆[24.02.23 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-4.md) | 단위 테스트 | |  |
+|  | stub, mock, spy는 무엇인가 | | |
+| 📆[24.02.26 MON](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-5.md) | 방어적 복사 | |  |
+|  | ImmutableCollection | | |
+| 📆[24.02.27 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-6.md) | 테스트 코드에서 for문을 사용하면 안되는 이유 | |  |
+|  | assertAll 사용법 | | |
+| 📆[24.02.28 WED](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-7.md) | 피드백 내용으로 채우기 | |  |
+| 📆[24.02.29 THU](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-8.md) | 피드백 내용으로 채우기 | |  |
+| 📆[24.03.04 MON](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-9.md) | | |  |
+|  | 생성자 대신 정적 팩토리 메서드를 사용하면 좋은 점 | | |
+
+### 단계별 PR
+- 1단계 사다리 생성 PR [링크](https://github.com/woowacourse/java-ladder/pull/328)
+- 2단계 사다리 게임 구현 PR [링크](https://github.com/woowacourse/java-ladder/pull/386)
+
+### 피드백 정리
+- 
+- 
+
+
+## 🚀 3) 블랙잭
+
+| 날짜 | 내용 | 완료 | 중요 |
+|--------|--------|--------|--------|
 | 📆24.03.05 TUE | | |  |
 | 📆24.03.06 WED | | |  |
 | 📆24.03.07 THU | | |  |
