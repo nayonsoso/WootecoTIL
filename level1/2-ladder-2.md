@@ -73,5 +73,5 @@ public record Name(String name) {
   - e.g. public => O, static => O
 - 상속
   - 다른 클래스를 상속받을 수도, 다른 클래스가 record를 상속할 수도 없다.
-    - record는 final 클래스이기 때문이다.
+    - record는 final 클래스이기 때문!
   - 인테페이스는 구현할 수 있다.
