@@ -75,3 +75,52 @@ public record Name(String name) {
   - 다른 클래스를 상속받을 수도, 다른 클래스가 record를 상속할 수도 없다.
     - record는 final 클래스이기 때문!
   - 인테페이스는 구현할 수 있다.
+
+#### 🔸 특이점
+- 컴팩트 생성자에서 필드는 언제 초기화되는가?
+  - 컴팩트 사용자에서 호출하는 함수들을 다 호출한 이후 초기화된다.
+- 따라서, 검증 함수를 호출하기 위해서
+  - `this`로 참조하면 에러가 발생한다.
+  - `매개변수`로 검증하려는 값을 받아야 에러가 발생하지 않는다.
+
+
+**에러가 발생하는 코드**
+```java
+public record PlayerNames(List<String> names) {
+
+    public PlayerNames {
+        validateDuplicate();
+    }
+
+    private void validateDuplicate() {
+        // ❗this로 받으면 에러가 발생❗
+        boolean isDuplicated = this.names.stream().distinct().count() != this.names.size();
+
+        if (isDuplicated) {
+            throw new IllegalArgumentException(NAME_DUPLICATE_MESSAGE);
+        }
+    }
+}
+```
+
+
+**정상 작동 코드**
+```java
+public record PlayerNames(List<String> names) {
+
+    public PlayerNames {
+        validateDuplicate(names);
+    }
+
+    // ❗함수의 매개변수로 받아야 에러가 발생하지 않는다.❗
+    private void validateDuplicate(names) {
+        boolean isDuplicated = names.stream().distinct().count() != names.size();
+
+        if (isDuplicated) {
+            throw new IllegalArgumentException(NAME_DUPLICATE_MESSAGE);
+        }
+    }
+}
+```
+
+
