@@ -98,8 +98,18 @@ void testWithEnum(Status status) {
   - static 메소드
   - Stream, Iterable, 또는 Iterator 타입을 반환해야 한다.
   - Stream<T>에서 T안에 들어가는게 static 메소드가 테스트의 파라미터로 반환할 자료형이다.
+- 아래의 경우에 유용하다.
+  - List를 파라미터로 받고 싶을 때
+  - 다양한 자료형의 목록을 파라미터로 받고 싶을 때
 
 ```java
+static Stream<List<String>> createValidNames() { // Stream<반환하는 자료형>
+    return Stream.of(
+            List.of("A"),
+            List.of("A", "B", "C", "D", "E", "F", "G", "H", "I")
+    );
+}
+
 @DisplayName("1명 이상 10명 이하면 예외를 발생하지 않는다.")
 @ParameterizedTest
 @MethodSource("createValidNames") // 함수의 이름
@@ -108,10 +118,21 @@ void validateNamesSize(List<String> names) { // 함수가 반환하는 자료형
             .doesNotThrowAnyException();
 }
 
-static Stream<List<String>> createValidNames() { // Stream<반환하는 자료형>
+static Stream<Arguments> createCard() {
     return Stream.of(
-            List.of("A"),
-            List.of("A", "B", "C", "D", "E", "F", "G", "H", "I")
+            Arguments.of(TWO_HEART, 2),
+            Arguments.of(TEN_HEART, 10),
+            Arguments.of(ACE_HEART, 11)
     );
+}
+
+@DisplayName("숫자로 계산한 값을 반환한다.")
+@ParameterizedTest
+@MethodSource("createCard")
+void getValue(Card card, int value) {
+    int actual = card.getLetterValue();
+    int expected = value;
+
+    assertThat(actual).isEqualTo(expected);
 }
 ```
