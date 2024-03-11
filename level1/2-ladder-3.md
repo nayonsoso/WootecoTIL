@@ -31,3 +31,81 @@ Fixture를 구현하기 위해 아래 방법들을 사용할 수 있다.
 - 중복 코드를 줄여 테스트 코드의 가독성을 높인다.
 - 테스트 코드 안에서 픽스쳐를 바로 이해할 수 있다.
 - 테스트 실행 시간 단축과 의도치않은 부작용을 피하기 위해 최소한의 테스트 데이터만을 갖는다.
+
+<br>
+
+### 🔶 @ValueSource, @CsvSource, @MethodSource
+----
+#### 🔸 개념
+- JUnit에서 제공하는 어노테이션들이다.
+- `@ParameterizedTest`와 함께 사용한다.
+- 이를 통해 알 수 있듯, 다양한 파라미터들에 대한 중복 코드를 줄이기 위해 사용한다.
+
+#### 🔸@ValueSource
+
+- ValueSource에서 지원하는 자료형으로는 short, byte, int, long, float, double, char, String 가 있다.
+- 옵션으로 `자료형 소문자 + s` 를 주고, 테스트 메서드의 인자로 받아준다.
+
+```java
+@ParameterizedTest
+@ValueSource(strings = {"산초", "아톰"})
+void validateUserNameLength(String name) {
+    assertThat(name.length()).isNotEqualTo(0);
+}
+```
+
+#### 🔸@CsvSource
+
+- 옵션으로 `value` 와 `delemeter`가 필요하다.
+- delemeter의 디폴트는 쉼표(,) 이다.
+- delemeter를 지정할 때는 큰 따옴표(")로 감싸지 말고, 작은 따옴표(')로 감싸야 한다.
+
+```java
+@ParameterizedTest
+@CsvSource(value = {"산초:true", ":false"} , delimiter = ':') // value와 dele구분자는 디폴트가 ,이다
+void validateUserNameLength2(String name, boolean result) {
+    boolean isValid = name.length() > 0;
+    assertThat(isValid).isEqualTo(result);
+}
+```
+
+- CsvSource의 value에는 enum도 올 수 있다.
+- 사용자 정의 class도 올 수 있지만, csv 테스트만을 위한 함수를 추가해줘야 하므로 패스한다.
+
+```java
+enum Status {
+    NEW, IN_PROGRESS, COMPLETED
+}
+
+@ParameterizedTest
+@CsvSource({"NEW", "IN_PROGRESS", "COMPLETED"})
+void testWithEnum(Status status) {
+    assertNotNull(status);
+}
+```
+
+#### 🔸@MethodSource
+- 테스트에 필요한 객체를 만들어주는 함수를 호출하고, 그 결과를 인자로 받아 사용한다.
+- 기본 타입, 객체, enum, 사용자 정의 클래스 등 거의 모든 타입의 파라미터를 테스트 메소드에 전달할 수 있다.
+- MethodSource 어노테이션의 속성값으로 함수의 이름이 들어간다.
+- 함수는 아래 조건을 만족해야 한다.
+  - static 메소드
+  - Stream, Iterable, 또는 Iterator 타입을 반환해야 한다.
+  - Stream<T>에서 T안에 들어가는게 static 메소드가 테스트의 파라미터로 반환할 자료형이다.
+
+```java
+@DisplayName("1명 이상 10명 이하면 예외를 발생하지 않는다.")
+@ParameterizedTest
+@MethodSource("createValidNames") // 함수의 이름
+void validateNamesSize(List<String> names) { // 함수가 반환하는 자료형
+    assertThatCode(() -> new PlayerNames(names))
+            .doesNotThrowAnyException();
+}
+
+static Stream<List<String>> createValidNames() { // Stream<반환하는 자료형>
+    return Stream.of(
+            List.of("A"),
+            List.of("A", "B", "C", "D", "E", "F", "G", "H", "I")
+    );
+}
+```
