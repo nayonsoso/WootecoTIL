@@ -44,12 +44,12 @@
 
 | 날짜 | 내용 | 완료 | 중요 |
 |--------|--------|--------|--------|
-| 📆[24.02.20 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-1.md) | TDD | ✅ |  |
+| 📆[24.02.20 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-1.md) | TDD란 | ✅ |  |
 |  | 인텔리제이의 유용한 여러 단축키 | ✅ | |
 | 📆[24.02.21 WED](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-2.md) | record | ✅ | ⭐ |
 |  |  불변의 객체라면 class보다 record를 쓰는게 무조건 이득일까? | ✅ | |
-| 📆[24.02.22 THU](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-3.md) | 테스트 - Fixture | ✅ |  |
-|  | @ValueSource, @CsvSource, @MethodSource | | |
+| 📆[24.02.22 THU](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-3.md) | Fixture란 | ✅ |  |
+|  | @ValueSource, @CsvSource, @MethodSource | ✅ | |
 | 📆[24.02.23 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-4.md) | 단위 테스트의 정의 | |  |
 |  | stub, mock, spy는 무엇인가 | | |
 | 📆[24.02.26 MON](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-5.md) | 방어적 복사 | |  |
