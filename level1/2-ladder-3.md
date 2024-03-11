@@ -41,6 +41,8 @@ Fixture를 구현하기 위해 아래 방법들을 사용할 수 있다.
 - `@ParameterizedTest`와 함께 사용한다.
 - 이를 통해 알 수 있듯, 다양한 파라미터들에 대한 중복 코드를 줄이기 위해 사용한다.
 
+<br>
+
 #### 🔸@ValueSource
 
 - ValueSource에서 지원하는 자료형으로는 short, byte, int, long, float, double, char, String 가 있다.
@@ -53,6 +55,8 @@ void validateUserNameLength(String name) {
     assertThat(name.length()).isNotEqualTo(0);
 }
 ```
+
+<br>
 
 #### 🔸@CsvSource
 
@@ -83,6 +87,8 @@ void testWithEnum(Status status) {
     assertNotNull(status);
 }
 ```
+
+<br>
 
 #### 🔸@MethodSource
 - 테스트에 필요한 객체를 만들어주는 함수를 호출하고, 그 결과를 인자로 받아 사용한다.
