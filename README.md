@@ -50,7 +50,7 @@
 |  |  불변의 객체라면 class보다 record를 쓰는게 무조건 이득일까? | ✅ | |
 | 📆[24.02.22 THU](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-3.md) | 테스트 - Fixture | |  |
 |  | csv 테스트 | | |
-| 📆[24.02.23 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-4.md) | 단위 테스트 | |  |
+| 📆[24.02.23 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-4.md) | 단위 테스트의 정의 | |  |
 |  | stub, mock, spy는 무엇인가 | | |
 | 📆[24.02.26 MON](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-5.md) | 방어적 복사 | |  |
 |  | ImmutableCollection | | |
