@@ -59,7 +59,7 @@
 | 📆[24.02.28 WED](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-7.md) | 피드백 내용으로 채우기 | |  |
 | 📆[24.02.29 THU](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-8.md) | 피드백 내용으로 채우기 | |  |
 | 📆[24.03.04 MON](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-9.md) | | |  |
-|  | 생성자 대신 정적 팩토리 메서드를 사용하면 좋은 점 | | |
+|  | 생성자 대신 정적 팩토리 메서드를 사용했을 때의 장단점 | | |
 
 ### 단계별 PR
 - 1단계 사다리 생성 PR [링크](https://github.com/woowacourse/java-ladder/pull/328)
@@ -68,7 +68,6 @@
 ### 피드백 정리
 - 
 - 
-
 
 ## 🚀 3) 블랙잭
 
@@ -79,7 +78,13 @@
 | 📆24.03.07 THU | | |  |
 | 📆24.03.08 FRI | | |  |
 | 📆24.03.11 MON | | |  |
-| 📆24.03.12 TUE | | |  |
+| 📆24.03.12 TUE | Stack보다는 Deque를 | |  |
+|  | VO와 Dto - 누가 정리해준 글 읽기 | | |
+|  | 가변인자 | | |
+|  | stream.anyMatcher | | |
+|  | 객체 안에서 캐싱을 하는 방법 | | |
+|  | State 전략 패턴 | | |
+|  | 함수형 인터페이스 연습하기 | | |
 | 📆24.03.13 WED | | |  |
 | 📆24.03.14 THU | | |  |
 | 📆24.03.15 FRI | | | |
