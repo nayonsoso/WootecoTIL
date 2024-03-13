@@ -61,32 +61,35 @@
 
 ---
 
-####🔸 Collections.unmodifiableList(existingList)
+#### 🔸 Collections.unmodifiableList(existingList)
 - existingList에 대한 변경 불가능한 뷰를 제공한다.
 - 이 뷰를 통해 내용을 변경하려고 하면 예외가 발생한다.
 - 하지만 원본 existingList 자체의 변경을 방지하지 않는다.
 - 원본 existingList가 변경되면 그 변경이 뷰에도 반영된다.
+
 ➡️ existingList를 readOnly로 보고 싶을 때 사용할 수 있다.
 ➡️ getter에서 사용하면, 외부에서 값이 변경되는것을 막을 수 있다.
 
 <br>
 
-####🔸 new ArrayList(existingList)
+#### 🔸 new ArrayList(existingList)
 - existingList의 모든 요소를 포함하는 새로운 리스트를 생성한다.
 - 새로운 리스트 자체는 existingList에 독립적이다.
 - 하지만 내부 객체들은 같은 주소를 공유하여, 얕은 복사가 된다.
 - 따라서 외부에서 existingList 내부 객체가 변경되면, 그 변경이 새로운 리스트에도 적용된다.
 - 내부 객체가 불변 객체가 아닌 경우, 완전히 '방어적'이라고 보긴 어렵다.
+
 ➡️ existingList와의 관계를 끊으면서, 새로운 컬렉션을 수정하고 싶을 때 사용할 수 있다.
 
 <br>
 
-####🔸 List.copyOf(existingList)
+#### 🔸 List.copyOf(existingList)
 - existingList의 불변 복사본을 생성한다.
 - new ArrayList( )와 마찬가지로, 새로운 리스트 자체는 existingList에 독립적이다.
 - 하지만 내부 객체들은 같은 주소를 공유하여, 얕은 복사가 된다.
 - new ArrayList( )와의 차이점은, new ArrayList( )로 생성한 리스트는 수정할 수 있지만, List.copyOf( )로 생성한 점은 수정할 수 없다는 점이다.
 - 복사본에 대한 제한적인 사용을 하기 위해 사용한다.
+
 ➡️ existingList와의 관계를 끊으면서, 새로운 컬렉션을 수정 방지하고 싶을 때 사용할 수 있다.
 
 <br>
@@ -101,7 +104,7 @@
 
 <br>
 
-####🔸 컬렉션에 대해 방어적 복사를 어떻게 적용할 것인가?
+#### 🔸 컬렉션에 대해 방어적 복사를 어떻게 적용할 것인가?
 - 생성자에서 필드 초기화할 때
   - 리스트 자체를 불변하게 유지할 것이라면, List.copyOf()를 사용
   - 리스트에 값을 더하는 등 수정할 여지가 있자면 new ArrayList()를 사용
