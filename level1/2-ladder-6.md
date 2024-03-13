@@ -18,3 +18,32 @@
 - 아주 크리티컬한 문제는 없는 것 같다🤔
 - 하지만 `가독성 저하` 측면에서 다들 안쓰는 것 같다.
 - 그러므로 나도 쓰지 말아야겠다!
+
+<br>
+
+### 🔶 assertAll
+
+---
+
+#### 🔸 개념
+- JUnit5에서 제공한다.
+- 장점
+  - 일반적인 검증문의 경우, 실패하는 검증이 있으면 거기서 테스트가 종료된다.
+  - 반면 assertAll을 사용하면 모든 검증을 실행할 수 있다.
+  - 연관성 있는 테스트를 그룹으로 묶음으로써, 의미를 전달할 수 있다.
+  - 여러 테스트가 실패했을 때, 각각의 원인을 한번에 파악할 수 있다.
+- cf. AssertJ에서 제공하는 SoftAssertions도 모든 검증 실행을 보장해주지만, 가독성 측면에서 assertAll 이 더 좋은 것 같다.
+
+<br>
+
+#### 🔸 사용법
+```java
+@Test
+void multipleAssertionsTest() {
+    assertAll("테스트 그룹의 이름",                   // 그룹 이름은 옵션
+        () -> assertThat(2).isEqualTo(1 + 1),        // 람다 표현식 사용
+        () -> assertThat('a' < 'b').isTrue(),        // 컴마로 구분
+        () -> assertThat("hi").isNotBlank()          // assertJ 문법도 사용 가능
+    );
+}
+```
