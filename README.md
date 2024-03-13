@@ -53,8 +53,9 @@
 | 📆[24.02.23 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-4.md) | 단위 테스트의 정의 | ✅ | ⭐ |
 |  | 좋은 단위테스트란 (FIRST 원칙) | ✅ | |
 |  | 단위 테스트에 대한 견해와 나의 결론 | ✅ | ⭐ |
-| 📆[24.02.26 MON](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-5.md) | 방어적 복사 | |  |
-|  | ImmutableCollection | | |
+| 📆[24.02.26 MON](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-5.md) | 얕은 복사와 깊은 복사 | ✅ |  |
+|  | 방어적 복사 | ✅ | |
+|  | 방어적 복사의 적용 | ✅ | ⭐ |
 | 📆[24.02.27 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-6.md) | 테스트 코드에서 for문을 사용하면 안되는 이유 | |  |
 |  | assertAll 사용법 | | |
 | 📆[24.02.28 WED](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-7.md) | 피드백 내용으로 채우기 | |  |
