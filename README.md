@@ -59,6 +59,7 @@
 | 📆[24.02.27 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-6.md) | 테스트 코드에서 for문을 지양해야 하는 이유 | ✅ |  |
 |  | assertAll의 장점과 사용법 | ✅ | |
 | 📆[24.02.28 WED](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-7.md) | computeIfAbsent의 사용법 | |  |
+|  | ConcurrentHashMap 이란 | ✅ | |
 | 📆[24.02.29 THU](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-8.md) | 피드백 내용으로 채우기 | |  |
 | 📆[24.03.04 MON](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-9.md) | | |  |
 |  | stub, mock, spy는 무엇인가 | | |
