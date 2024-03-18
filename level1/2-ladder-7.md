@@ -48,6 +48,6 @@ default V computeIfAbsent(K key, Function<? super K, ? extends V> mappingFunctio
   - map에 키에 해당하는 값이 null 즉, 없으면 만들어서 넣어주고
   - null 이 아니면 그 값을 그대로 반환한다.
 - `mappingFunction.apply(key)`
-  - Function 인터페이스에 apply 함수는 구현체 내부를 실행한다는 뜻이다.
+  - Function 인터페이스에 대한 apply 함수는 구현체 내부를 실행한다는 뜻이다.
   - 람다식이라면, 람다식을 실행한다.
   - ⭐즉, 첫번째 인자인 key를 매핑함수의 인자로 넣어 value를 만들겠다는 뜻이다.⭐
