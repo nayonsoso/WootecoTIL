@@ -70,7 +70,7 @@
 - 2단계 사다리 게임 구현 PR [링크](https://github.com/woowacourse/java-ladder/pull/386)
 
 ### 피드백 정리
-- 
+- 패키지 이름으로 계층을, 클래스 이름으로 행위를 표현하게 하라 [링크](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-review-1.md)
 - 
 
 ## 🚀 3) 블랙잭
