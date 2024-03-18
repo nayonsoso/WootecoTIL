@@ -62,8 +62,7 @@
 |  | ConcurrentHashMap 이란 | | |
 | 📆[24.02.29 THU](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-8.md) | 패키지의 존재 이유는 무엇인가 | |  |
 |  | 객체의 이름을 er로 끝내면 안되는 이유 | | |
-| 📆[24.03.04 MON](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-9.md) | | |  |
-|  | stub, mock, spy는 무엇인가 | | |
+| 📆[24.03.04 MON](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-9.md) | stub, mock, spy는 무엇인가 | |  |
 |  | 생성자 대신 정적 팩토리 메서드를 사용했을 때의 장단점 | | |
 
 ### 단계별 PR
