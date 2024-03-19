@@ -103,7 +103,8 @@
 |  | The default unnamed package should not be used | | |
 | 📆24.03.15 FRI | | | |
 | 📆24.03.18 MON | | |  |
-| 📆24.03.19 TUE | | |  |
+| 📆24.03.19 TUE | | | autocloseable과 try-with-resource |
+
 | 📆24.03.20 WED | | |  |
 | 📆24.03.21 THU | | |  |
 | 📆24.03.22 FRI | | |  |
