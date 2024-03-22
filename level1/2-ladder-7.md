@@ -101,3 +101,30 @@ public class MapExamples {
     }
 }
 ```
+
+### 🔶 concurrentHashMap
+---
+
+#### 🔸 HashTable의 한계
+- `Hashtable` 은 메서드 전체에 synchronized 키워드가 존재한다.
+- 따라서 멀티 스레드 환경에서 Thread-safe하다.
+- 하지만 메서드 전체가 임계구역으로 설정되기 때문에, 동시에 여러 작업을 할 때 병목 현상이 발생할 수 있다.
+- 그리고 Collection Framework가 나오기 이전부터 만들어졌기 때문에 최근에는 잘 사용하지 않는다.
+
+#### 🔸 HashMap의 한계
+- `HashMap` 내부에는 synchronized 키워드가 없다.
+- 따라서 Multi-Thread 환경에서 무결성을 보장할 수 없다.
+- 하지만 단일 쓰레드 환경에서는 Map 의 구현체 중에서 성능이 제일 좋다.
+
+#### 🔸 ConcurrentHashMap의 등장
+- Multi-Thread 환경에서 사용할 수 있으며, 성능까지 좋은 map이다.
+- concurrentHashMap은 내부적으로 `락 분할`을 사용한다.
+- 이는 전체 맵을 잠그지 않고 특정 부분(세그먼트)에 대해서만 락을 적용하는 방법이다.
+- 따라서 여러 쓰레드가 동시에 데이터를 삽입, 참조하더라도
+- 그 데이터가 다른 세그먼트에 위치하면 락을 얻기 위해 경쟁하지 않는다.
+
+#### 🔸 ConcurrentHashMap과 HashMap
+- 단일 쓰레드 환경에서는 HashMap을 쓰자.
+  - ConcurrentHashMap은 동시성을 고려하기 때문에 오버헤드가 크다.
+- 멀티 쓰레드 환경에서는 ConcurrentHashMap을 쓰자.
+  - HashMap은 멀티 쓰레드 환경에서 동시성 이슈가 발생할 수 있다.
