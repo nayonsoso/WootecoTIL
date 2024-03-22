@@ -51,3 +51,10 @@ default V computeIfAbsent(K key, Function<? super K, ? extends V> mappingFunctio
   - Function 인터페이스에 대한 apply 함수는 구현체 내부를 실행한다는 뜻이다.
   - 람다식이라면, 람다식을 실행한다.
   - ⭐즉, 첫번째 인자인 key를 매핑함수의 인자로 넣어 value를 만들겠다는 뜻이다.⭐
+- 사용 예시
+    ```java
+    public static Car of(final String name, final Position position) {
+        // ❗첫번째 인자인 toKey()가 두번째 인자의 key로 들어가고 있다❗
+        return CACHE.computeIfAbsent(toKey(name, position), key -> new Car(key, position));
+    }
+    ```
