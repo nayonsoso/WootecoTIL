@@ -2,12 +2,10 @@
 
 ---
 추가 공부 필요한것들 TODO
-- [x] 레이어를 나눠야 하는 이유
 - [ ] static 사용을 지양해야 하는 이유
 - [ ] 객체를 불변하게 관리하는 방법 
 - [ ] 디자인 패턴
 - [ ] csv 테스트(?)
-- [ ] 레코드
 - [ ] supplier.get() 의 의미
 - [ ] 제네릭 클래스나 함수에서 `<T> T` 를 쓰는 이유
 
@@ -58,8 +56,8 @@
 |  | 방어적 복사의 적용 | ✅ | ⭐ |
 | 📆[24.02.27 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-6.md) | 테스트 코드에서 for문을 지양해야 하는 이유 | ✅ |  |
 |  | assertAll의 장점과 사용법 | ✅ | |
-| 📆[24.02.28 WED](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-7.md) | computeIfAbsent의 사용법 | |  |
-|  | ConcurrentHashMap 이란 | | |
+| 📆[24.02.28 WED](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-7.md) | computeIfAbsent() 메서드 | ✅ |  |
+|  | ConcurrentHashMap 이란 | ✅ | |
 | 📆[24.02.29 THU](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-8.md) | 패키지의 존재 이유는 무엇인가 | |  |
 |  | 객체의 이름을 er로 끝내면 안되는 이유 | | |
 | 📆[24.03.04 MON](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-9.md) | stub, mock, spy는 무엇인가 | |  |
