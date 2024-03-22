@@ -58,3 +58,46 @@ default V computeIfAbsent(K key, Function<? super K, ? extends V> mappingFunctio
         return CACHE.computeIfAbsent(toKey(name, position), key -> new Car(key, position));
     }
     ```
+
+<br>
+
+#### 🔸 computeIfAbsent의 자매품
+
+- computeIfAbsent(Key, Function)
+  - 키에 해당하는 값이 없으면, 함수를 실행하여 새 값을 저장한다.
+  - `map.computeIfAbsent(key, k -> new Value(k));`
+- computeIfPresent(Key, BiFunction)
+  - 키에 해당하는 값이 있으면, 함수를 실행하여 값을 업데이트한다.
+  - 키에 해당하는 값이 없으면 실행하지 않는다.
+  - 함수 실행 결과가 null이면 키를 제거한다.
+  - `map.computeIfPresent(key, (k, v) -> newValue);`
+- compute(Key, BiFunction)
+  - 키에 대해 함수를 실행하여 값을 업데이트한다.
+  - 값이 있으면 업데이트, 값이 없으면 추가를 한다.
+  - 함수 실행 결과가 null이면 키를 제거한다.
+  - `map.compute(key, (k, v) -> newValue);`
+
+<br>
+
+#### 🔸 compute와 put의 비교
+
+- 공통점 : 둘 다 키에 대응하는 값이 있으면 업데이트, 값이 없으면 추가한다.
+- 차이점 : put은 단순한 입력인 반면, compute는 key를 인자로 받아 동적으로 계산한다.
+
+```java
+public class MapExamples {
+    public static void main(String[] args) {
+        Map<String, Integer> map = new HashMap<>();
+
+        map.put("apple", 10);
+        // apple의 값을 기존 값+10으로 업데이트한다.
+        map.computeIfPresent("apple", (key, value) -> value + 10);
+        // banana의 값을 찾고, 있으면 +5를 업데이트, 없으면 5로 초기화한다.
+        map.compute("banana", (key, value) -> (value == null) ? 5 : value + 5);
+        // orange의 값이 없을 경우에만 3으로 초기화한다.
+        map.computeIfAbsent("orange", key -> 3);
+
+        System.out.println(map); // 출력 결과: {apple=20, banana=5, orange=3}
+    }
+}
+```
