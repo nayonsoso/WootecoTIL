@@ -101,10 +101,13 @@
 |  | The default unnamed package should not be used | | |
 | 📆24.03.15 FRI | | | |
 | 📆24.03.18 MON | | |  |
-| 📆24.03.19 TUE | | | autocloseable과 try-with-resource |
-|  | 팩토리 클래스 | | |
 
-| 📆24.03.20 WED | | |  |
+## 🚀 4) 체스
+
+| 날짜 | 내용 | 완료 | 중요 |
+| 📆24.03.19 TUE | autocloseable과 try-with-resource | |  |
+|  | 팩토리 클래스 | | |
+| 📆24.03.20 WED | List와 Set의 contains 성능 비교 | |  |
 | 📆24.03.21 THU | | |  |
 | 📆24.03.22 FRI | | |  |
 | 📆24.03.25 MON | | |  |
