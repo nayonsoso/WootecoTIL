@@ -60,8 +60,7 @@
 |  | ConcurrentHashMap 이란 | ✅ | |
 | 📆[24.02.29 THU](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-8.md) | 패키지의 존재 이유는 무엇인가 | ✅ |  |
 |  | 객체의 이름을 er로 끝내면 안된다는 견해 | ✅ | |
-| 📆[24.03.04 MON](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-9.md) | stub, mock, spy는 무엇인가 | |  |
-|  | 생성자 대신 정적 팩토리 메서드를 사용했을 때의 장단점 | | |
+| 📆[24.03.04 MON](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-9.md) | 생성자 대신 정적 팩토리 메서드를 사용했을 때의 장단점 | ✅ | ⭐ |
 
 ### 단계별 PR
 - 1단계 사다리 생성 PR [링크](https://github.com/woowacourse/java-ladder/pull/328)
@@ -70,7 +69,7 @@
 ### 피드백 정리
 - 패키지 이름으로 계층을, 클래스 이름으로 행위를 표현하게 하라 [링크](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-review-1.md)
 - 컨트롤러의 역할은 무엇인가? [링크](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-review-2.md)
-- 테스트 코드는 명세를 드러낸다는 마음으로 친절하게 작성해야 한다 [링크](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-review-3.md)
+- 테스트 코드는 명세화한다는 마음으로 친절하게 작성해야 한다 [링크](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-review-3.md)
 
 ## 🚀 3) 블랙잭
 
@@ -109,7 +108,7 @@
 | 📆24.03.19 TUE | autocloseable과 try-with-resource | |  |
 |  | 팩토리 클래스 | | |
 |  | Stream<> 과 flatmap에 대해 더 공부하기 | | |
-|  | 더블 테스트란 뭐지? | | |
+|  | 더블 테스트란 뭐지? | | | stub, mock, spy는 무엇인가
 | 📆24.03.20 WED | List와 Set의 contains 성능 비교 | |  |
 | 📆24.03.21 THU | | |  |
 | 📆24.03.22 FRI | | |  |
