@@ -69,7 +69,7 @@
 
 ### 피드백 정리
 - 패키지 이름으로 계층을, 클래스 이름으로 행위를 표현하게 하라 [링크](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-review-1.md)
-- 
+- 컨트롤러의 역할은 무엇인가? [링크](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-review-2.md)
 
 ## 🚀 3) 블랙잭
 
