@@ -72,6 +72,8 @@
 - 테스트 코드는 명세화한다는 마음으로 친절하게 작성해야 한다 [링크](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-review-3.md)
 - 원시값 포장은 언제 해야할까? [링크](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-review-4.md)
 
+<br>
+
 ## 🚀 3) 블랙잭
 
 | 날짜 | 내용 | 완료 | 중요 |
