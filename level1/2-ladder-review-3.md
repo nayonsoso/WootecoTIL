@@ -23,14 +23,13 @@
 @Test
 void ladderHasLines() {
     // ❗ 값이 갖는 의미를 변수 이름을 통해 보여주었다.
-    Height height = new Height(3);
+    int expectedHeight = 3;
     int playerSize = 9;
+    StickGenerator mockStickGenerator = mockSticksGenerator();
 
-    Ladder ladder = Ladder.of(height, playerSize, mockSticksGenerator());
+    Ladder ladder = Ladder.of(new Height(expectedHeight), playerSize, mockStickGenerator);
+
     int actualHeight = ladder.getHeight();
-
-    assertThat(actualHeight).isEqualTo(height.getHeight());
+    assertThat(actualHeight).isEqualTo(expectedHeight);
 }
 ```
-
-
