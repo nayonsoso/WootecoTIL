@@ -71,6 +71,7 @@
 - 컨트롤러의 역할은 무엇인가? [링크](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-review-2.md)
 - 테스트 코드는 명세화한다는 마음으로 친절하게 작성해야 한다 [링크](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-review-3.md)
 - 원시값 포장은 언제 해야할까? [링크](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-review-4.md)
+- 테스트 코드에서 검증하려는 함수 외의 함수를 호출한다면, 이는 의존적인 테스트인가? [링크](https://github.com/nayonsoso/WIL/blob/main/level1/2-ladder-review-5.md)
 
 <br>
 
