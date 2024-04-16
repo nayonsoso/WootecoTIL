@@ -24,6 +24,6 @@
 <br>
 
 #### 🔸 Deque의 구현 클래스와 적절한 사용처
-- ArrayDeque : 단일 쓰레드 환경에서 사용
-- LinkedList : Deque에 index를 사용하고 싶을 때 사용
-- ConcurrentLinkedDeque : 멀티 쓰레드 환경에서 사용
+- `ArrayDeque` : 단일 쓰레드 환경에서 사용
+- `LinkedList` : Deque에 index를 사용하고 싶을 때 사용
+- `ConcurrentLinkedDeque` : 멀티 쓰레드 환경에서 사용
