@@ -79,7 +79,7 @@
 | 📆[24.03.06 WED](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-2.md) | VO란 | |  |
 |  | VO vs Dto vs 원시값 포장 객체 | | |
 | 📆[24.03.07 THU](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-3.md) | 가변인자(varargs)의 개념과 특징 | |  |
-| 📆[24.03.08 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-4.md) | Stream API의 findAny, findFirst, anyMatch, allMatch, noneMatch | |  |
+| 📆[24.03.08 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-4.md) | Stream API의 find___와 ___Match | |  |
 | 📆[24.03.11 MON](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-5.md) | Stream API의 flatmap 사용법 | |  |
 | | reduce와 mapToInt.sum() 간의 차이 | | |
 | 📆[24.03.12 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-6.md) | 상태 패턴 | |  |
