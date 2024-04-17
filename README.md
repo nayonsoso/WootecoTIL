@@ -77,7 +77,7 @@
 |--------|--------|--------|--------|
 | 📆[24.03.05 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-1.md) | Stack보다는 Deque를 써야하는 이유 | |  |
 | 📆[24.03.06 WED](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-2.md) | VO란 | |  |
-|  | VO와 Dto의 차이 | | |
+|  | VO vs Dto vs 원시값 포장 객체 | | |
 | 📆[24.03.07 THU](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-3.md) | 가변인자란 | |  |
 | 📆[24.03.08 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-4.md) | stream.anyMatcher의 사용법 | |  |
 | | flatmap의 사용법 | | |
