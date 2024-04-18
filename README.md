@@ -79,7 +79,7 @@
 | 📆[24.03.06 WED](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-2.md) | VO란 | ✅ | ⭐ |
 |  | VO vs Dto vs 원시값 포장 객체 | ✅ | |
 | 📆[24.03.07 THU](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-3.md) | 가변인자(varargs)의 개념과 특징 | ✅ |  |
-| 📆[24.03.08 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-4.md) | Stream의 탐색과 조건 확인 함수 | ✅ |  |
+| 📆[24.03.08 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-4.md) | Stream의 탐색 함수과 조건 확인 함수 | ✅ |  |
 | 📆[24.03.11 MON](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-5.md) | 제네릭과 와일드 카드의 차이 | |  |
 |  | 제네릭 클래스나 함수에서 적는 `<T> T`의 의미 | | |
 | 📆[24.03.12 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-6.md) | 상태 패턴 | |  |
@@ -113,7 +113,6 @@
 | 📆[24.03.22 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess-4.md) | 표준 예외의 종류 | |  |
 | 📆[24.03.25 MON](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess-5.md) | CheckedException과 UncheckedException의 차이 | |  |
 | 📆[24.03.26 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess-6.md) | Stream의 flatmap 사용법 | |  |
-| | reduce와 mapToInt.sum() 간의 차이 | | |
 | 📆[24.03.27 WED](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess-7.md) | 무분별한 static 사용을 지양해야 하는 이유 | |  |
 | 📆[24.03.28 THU](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess-8.md) | JUnit과 AssertJ의 차이 | |  |  
 | 📆[24.03.29 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess-9.md) | 테스트 코드에서 검증하려는 함수 외의 함수를 호출한다면, 이는 의존적인 테스트인가? | |  |
