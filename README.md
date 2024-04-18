@@ -83,8 +83,7 @@
 | 📆[24.03.11 MON](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-5.md) | 제네릭과 와일드 카드의 차이 | |  |
 |  | 제네릭 클래스나 함수에서 적는 `<T> T`의 의미 | | |
 | 📆[24.03.12 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-6.md) | 상태 패턴 | |  |
-|  | 전략 패턴 | | |
-| 📆[24.03.13 WED](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-7.md) | git의 체리콕 | |  |
+| 📆[24.03.13 WED](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-7.md) | 전략 패턴 | |  |
 | 📆[24.03.14 THU](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-8.md) | 팩토리 패턴 | |  |
 |  | 팩토리 클래스 | | |
 | 📆[24.03.15 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-9.md) | 가변 객체와 불변 객체 | | |
@@ -109,7 +108,7 @@
 | 📆[24.03.19 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess-1.md) | JDBC란 | |  |
 |  | JDBC를 사용하면 어떻게 벤더사와 관계 없이 자바 코드를 작성할 수 있는가? | | |
 | 📆[24.03.20 WED](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess-2.md) | autocloseable과 try-with-resource | |  |  
-| 📆[24.03.21 THU](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess-3.md) | List와 Set의 contains 성능 비교 | |  |
+| 📆[24.03.21 THU](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess-3.md) | git의 체리콕 | |  |
 | 📆[24.03.22 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess-4.md) | 표준 예외의 종류 | |  |
 | 📆[24.03.25 MON](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess-5.md) | CheckedException과 UncheckedException의 차이 | |  |
 | 📆[24.03.26 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess-6.md) | Stream의 flatmap 사용법 | |  |
