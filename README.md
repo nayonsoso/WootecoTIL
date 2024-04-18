@@ -75,12 +75,12 @@
 
 | 날짜 | 내용 | 완료 | 중요 |
 |--------|--------|--------|--------|
-| 📆[24.03.05 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-1.md) | Stack보다는 Deque를 써야하는 이유 | |  |
-| 📆[24.03.06 WED](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-2.md) | VO란 | |  |
-|  | VO vs Dto vs 원시값 포장 객체 | | |
-| 📆[24.03.07 THU](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-3.md) | 가변인자(varargs)의 개념과 특징 | |  |
-| 📆[24.03.08 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-4.md) | Stream API의 findXXX 와 XXXMatch | |  |
-| 📆[24.03.11 MON](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-5.md) | Stream API의 flatmap 사용법 | |  |
+| 📆[24.03.05 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-1.md) | Stack보다는 Deque를 써야하는 이유 | ✅ |  |
+| 📆[24.03.06 WED](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-2.md) | VO란 | ✅ | ⭐ |
+|  | VO vs Dto vs 원시값 포장 객체 | ✅ | |
+| 📆[24.03.07 THU](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-3.md) | 가변인자(varargs)의 개념과 특징 | ✅ |  |
+| 📆[24.03.08 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-4.md) | Stream의 탐색과 조건 확인 함수 | ✅ |  |
+| 📆[24.03.11 MON](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-5.md) | Stream의 flatmap 사용법 | |  |
 | | reduce와 mapToInt.sum() 간의 차이 | | |
 | 📆[24.03.12 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/3-blackjack-6.md) | 상태 패턴 | |  |
 |  | 전략 패턴 | | |
