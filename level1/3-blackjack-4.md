@@ -1,7 +1,7 @@
 ### 🔶 Stream API의 탐색 메서드
 ---
 
-#### 🔸 findAny()
+#### 🔸 findAny
 ```java
 Optional<T> findAny()
 ```
