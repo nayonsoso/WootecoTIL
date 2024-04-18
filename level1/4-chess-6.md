@@ -1,88 +1,47 @@
-### 🔶 Stream API의 탐색 메서드
+### 🔶 flatMap 사용법
 ---
 
-#### 🔸 findAny
+#### 🔸 자바 공식 문서
 ```java
-Optional<T> findAny()
-```
-- 스트림에 요소가 하나라도 있으면, 그 값을 Optional로 감싸 반환한다.
-- 순서를 보장하지 않으므로 사용에 주의해야 한다.
-- 값이 하나라도 있으면 즉시 연산을 중단하고 반환한다.
-- 이런 특성 때문에 병렬 스트림에서 성능이 좋다.
-
-```java
-public static Direction find(final int dx, final int dy) {
-    return Arrays.stream(values())
-            .filter(direction -> direction.isSameGradiant(dx, dy) && direction.isSameSign(dx, dy))
-            .findFirst()
-            .orElseThrow(() -> new IllegalArgumentException("존재하지 않는 이동 방향입니다."));
-}
+<R> Stream<R> flatMap(Function<? super T, ? extends Stream<? extends R>> mapper);
 ```
 
-- 주로 filter 뒤에 사용하여 조건에 맞는 원소를 탐색하기 위해 사용한다.
+> Returns **a stream consisting of the results of** replacing each element of this stream with the contents of a mapped stream produced by applying the **provided mapping function** to each element. 
 
 <br>
 
-#### 🔸 findFirst
-```java
-Optional<T> findFirst()
-```
-- 스트림의 첫번째 값을 Optional로 감싸 반환한다.
-- 첫번째 값을 찾을 경우 즉시 연산을 중단하고 반환한다.
-- 단일 스트림의 경우 효율적이지만, 병렬 스트림의 경우 전체 중에서 첫번째 요소를 결정하는 작업이 필요하기 때문에 성능이 좋지 않다.
+#### 🔸 개념
 
-```java
-Optional<Product> firstAvailableProduct = products.stream()
-                                                  .filter(p -> p.getStock() > 0)
-                                                  .findFirst();
-```
-
-- 주로 filter 뒤에 사용하여 조건에 맞는 원소를 탐색하기 위해 사용한다.
-- 순서가 중요할 때 사용한다.
+- 여러개의 스트림을 하나의 스트림으로 만들어줘야 하는 경우가 있다.
+- 중첩된 스트림을 사용하거나, 이중 for 문에서 스트림을 사용하는 경우 등..
+- flatMap의 메서드 시그니터에서 알 수 있다시피, flatMap은 인자로 Funtion<A, B>를 받는다.
+- flatMap은 A에 해당하는 것에 대해 함수를 실행하여 B로 만들어주되, 이 결과를 하나의 스트림으로 만들어준다.
+    - ① 어떤 값에 대해 스트림을 만드는 매핑 함수가 주어지면 
+    - ② 모든 요소에 대해 매핑 함수를 실행하고 
+    - ③ 그 결과를(여러 스트림)을 하나의 스트림으로 변환해주는 역할을 한다.
+- Stream의 map함수와 비슷하면서, 더 나아가 그 결과를 하나의 Stream으로 만들어준다.
 
 <br>
 
-### 🔶 Stream API의 조건 검사 메서드
----
+#### 🔸 사용 예시
 
-#### 🔸anyMatch
 ```java
-boolean anyMatch(Predicate<? super T> predicate)
-```
-- 조건을 만족하는 요소가 하나라도 있는지를 검사한다.
-- 주로 컬렉션의 요소가 하나라도 조건을 만족하는지 확인하기 위해 사용한다.
+private static final Map<String, Position> CACHE;
 
-```
-boolean hasMinor = people.stream()
-                         .anyMatch(p -> p.getAge() < 18);
-```
+static {
+        CACHE = Arrays.stream(File.values())
+                .flatMap(Position::createPositionWithEachRank)
+                .collect(Collectors.toMap(
+                        position -> toKey(position.file, position.rank),
+                        position -> position));
+    }
 
-<br>
-
-#### 🔸allMatch
-```java
-boolean allMatch(Predicate<? super T> predicate)
-```
-
-- 모든 요소가 조건을 만족하는지 반환한다.
-- 주로 데이터의 일관성을 확인하기 위해, 컬렉션의 모든 요소가 조건을 만족하는지 확인하기 위해 사용한다.
-
-```
-boolean allAgesAboveMinPrice = ages.stream()
-                                       .allMatch(age -> age.getAmount() >= 100);
+    private static Stream<Position> createPositionWithEachRank(File file) {
+        return Arrays.stream(Rank.values())
+                .map(rank -> new Position(file, rank));
+    }
 ```
 
-<br>
-
-#### 🔸noneMatch
-```java
-boolean noneMatch(Predicate<? super T> predicate)
-```
-
-- 스트림의 모든 요소가 predicate의 조건을 만족하지 못하는지 반환한다.
-- 사실상 allMatch의 결과에 `!`를 붙인 것과 같지만, 가독성과 직관성을 위해 따로 만든 것이라 생각하면 된다.
-
-```
-boolean allAgesAboveMinPrice = ages.stream()
-                                       .nonMatch(age -> age.getAmount() < 100);
-```
+- createPositionWithEachRank은 file을 받아 Stream<Position>을 반환하는 매핑 함수이다.
+- 첫번째 static 블록에서는 이를 사용해 모든 file에 대해 Stream<Position>을 각각 만들고, 이를 하나로 합친다.
+- 이후 Position을 사용해 Map 형태로 만들어준다.
