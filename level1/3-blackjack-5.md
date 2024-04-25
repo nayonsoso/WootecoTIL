@@ -114,6 +114,8 @@ public static <T> T getFirstElement(T[] array) {
 - `<? extends T>` : T 타입 또는 그 하위 타입만 올 수 있다.
 - `<? super T>` :  T 타입 또는 그 상위 타입만 올 수 있다.
 
+<br>
+
 > 나보다 더 잘 정리한 곳 :
 > 
 > [제네릭의 공변성 & 와일드카드 완벽 이해](https://inpa.tistory.com/entry/JAVA-%E2%98%95-%EC%A0%9C%EB%84%A4%EB%A6%AD-%EC%99%80%EC%9D%BC%EB%93%9C-%EC%B9%B4%EB%93%9C-extends-super-T-%EC%99%84%EB%B2%BD-%EC%9D%B4%ED%95%B4)
