@@ -25,4 +25,6 @@
 - 행동을 캡슐화하며, 교체하기에 용이하다.
 - 테스트가 안되는 전략을 다른 것으로 교체함으로써, 테스트를 쉽게 할 수 있다.
 
+<br>
+
 참고 : https://refactoring.guru/ko/design-patterns/strategy
