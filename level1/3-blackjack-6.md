@@ -1,6 +1,8 @@
 ### 🔶 상태 패턴
 ---
 
+![image](https://github.com/nayonsoso/WootecoTIL/assets/76177848/0c158286-7f7f-422b-8dfb-5fb32a2577a2)
+
 #### 🔸 등장 배경
 
 - 어플리케이션에서 객체의 상태가 바뀌며, `상태에 따라 다르게 행동`해야 하는 경우가 있다.
