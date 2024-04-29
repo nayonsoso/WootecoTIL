@@ -4,8 +4,8 @@
 | 날짜 | 내용 | 완료 | 중요 |
 |--------|--------|--------|--------|
 | 📆[24.04.16 TUE](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/1.md) | 프레임워크와 라이브러리의 차이  |  | ⭐ |
-| | 스프링은 왜 프레임워크인가? | | |
-| 📆[24.04.17 WED](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/2.md) | 개발자 모드의 Network / XR은 무슨 뜻인가? |  |  |
+| | 스프링은 왜 프레임워크라고 볼 수 있는가? | | |
+| 📆[24.04.17 WED](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/2.md) | 개발자 모드의 Network 탭과 Fetch/XHR 필터 |  |  |
 | 📆[24.04.18 THU](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/3.md) | build.gradle에서 의존성을 관리하는 방법 |  | ⭐ |
 | | build.gradle에 의존성을 추가하면 무슨 일이 일어나는가? | | |
 | | gradlew | | |
