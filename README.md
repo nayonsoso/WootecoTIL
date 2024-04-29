@@ -17,13 +17,15 @@
 
 | Title | Keyword | Date |
 |-------|---------|------|
-| Room escape admin |  | [24.04.16 ~ 24.04.29](level2/1-room-escape-admin/README.md) |
-| Room escape ??? |  | [24.04.30 ~ 24.05.13]() |
-| Room escape ??? |  | [24.05.14 ~ 24.05.27]() |
-| Room escape ??? |  | [24.05.28 ~ 24.06.10]() |
+| Room escape admin | Spring core, MVC  | [24.04.16 ~ 24.04.29](level2/1-room-escape-admin/README.md) |
+| Room escape ??? | REST API, Auth, Excpetion | [24.04.30 ~ 24.05.13]() |
+| Room escape ??? | JPA, Slice Test | [24.05.14 ~ 24.05.27]() |
+| Room escape ??? | Acceptance Test | [24.05.28 ~ 24.06.10]() |
 
 
-
+<br>
+<br>
+<br>
 
 추가 공부 필요한것들 TODO
 - [ ] 학습 테스트 다 하기 - 함수형 인터페이스 연습하기
