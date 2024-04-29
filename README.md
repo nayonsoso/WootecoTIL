@@ -6,10 +6,10 @@
 
 | Title | Keyword | Date |
 |-------|---------|------|
-| Car racing | Unit test | [24.02.14 ~ 24.02.19]() |
-| Ladder game | TDD |  [24.02.20 ~ 24.03.04]() |
-| Blackjack | Clean code | [24.03.05 ~ 24.03.18]() |
-| Chess | OOP, DB | [24.03.19 ~ 24.04.01]() |
+| Car racing | Unit test | [24.02.14 ~ 24.02.19](level1/1-car-racing/README.md) |
+| Ladder game | TDD |  [24.02.20 ~ 24.03.04](level1/2-ladder/README.md) |
+| Blackjack | Clean code | [24.03.05 ~ 24.03.18](level1/3-blackjack/README.md) |
+| Chess | OOP, DB | [24.03.19 ~ 24.04.01](level1/4-chess/README.md) |
 
 
 
