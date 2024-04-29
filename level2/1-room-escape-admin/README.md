@@ -4,11 +4,10 @@
 | 날짜 | 내용 | 완료 | 중요 |
 |--------|--------|--------|--------|
 | 📆[24.04.16 TUE](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/1.md) | 프레임워크와 라이브러리의 차이  |  | ⭐ |
-| | 스프링은 왜 프레임워크라고 볼 수 있는가? | | |
+| | Spring은 왜 프레임워크라고 볼 수 있는가? | | |
 | 📆[24.04.17 WED](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/2.md) | 개발자 모드의 Network 탭과 Fetch/XHR 필터 |  |  |
-| 📆[24.04.18 THU](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/3.md) | build.gradle에서 의존성을 관리하는 방법 |  | ⭐ |
-| | build.gradle에 의존성을 추가하면 무슨 일이 일어나는가? | | |
-| | gradlew | | |
+| 📆[24.04.18 THU](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/3.md) | gradle 이란 |  | |
+| | gradlew를 통해 빌드할 때 일어나는 일 | | ⭐ |
 | 📆[24.04.19 FRI](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/4.md) | HTTP 상태 코드 201, 204 |  |  |
 | 📆[24.04.22 MON](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/5.md) | long과 Long의 차이점 |  |  |
 | 📆[24.04.23 TUE](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/6.md) | 스프링과 멀티쓰레드의 연관성 |  | ⭐ |
