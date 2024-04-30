@@ -21,11 +21,12 @@
 | 📆[24.04.29 MON](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/10.md) | Dynamic Test |  |  |
 
 ### 추가 정리 내용
-- Spring Bean
-- Spring MVC
-- Spring Context
-- DI / IoC
 - Spring Core
+- Spring MVC
+- Spring Bean
+- Spring Context
+- Component Scan
+- DI / IoC
 - Layered Architecture
 - 단위테스트 vs 통합테스트 vs 인수테스트
 - schema.sql 실행 과정 읽어보기 (feat. 짱수)
