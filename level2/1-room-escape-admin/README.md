@@ -9,7 +9,7 @@
 | 📆[24.04.18 THU](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/3.md) | gradle 이란 | ✅ | |
 | | gradlew를 사용해 빌드할 때 일어나는 일 | ✅ | ⭐ |
 | | gradle 빌드 스크립트 (build.gradle) 분석 | ✅ | |
-| 📆[24.04.19 FRI](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/4.md) | HTTP 상태 코드 201, 204 |  |  |
+| 📆[24.04.19 FRI](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/4.md) | HTTP 상태 코드 200, 201, 202, 204 | ✅ | ⭐ |
 | 📆[24.04.22 MON](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/5.md) | long과 Long의 차이점 |  |  |
 | 📆[24.04.23 TUE](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/6.md) | 스프링과 멀티쓰레드의 연관성 |  | ⭐ |
 | | 멀티쓰레드를 테스트하는 방법 (feat. 낙낙) | | |
