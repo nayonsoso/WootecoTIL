@@ -13,7 +13,7 @@
 | 📆[24.04.22 MON](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/5.md) | long과 Long의 차이점 | ✅ |  |
 | | 엔티티의 id를 Long으로 써야하는 이유 | ✅ | |
 | 📆[24.04.23 TUE](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/6.md) | 스프링과 멀티쓰레드의 연관성 |  | ⭐ |
-| | 멀티쓰레드를 테스트하는 방법 (feat. 낙낙) | | |
+| | 스프링 부트에서의 원자성 보장 | | |
 | 📆[24.04.24 WED](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/7.md) | 테스트 코드의 영문 이름 컨벤션 |  |  |
 | 📆[24.04.25 THU](https://github.com/nayonsoso/WIL/blob/main/level2/1-room-escape-admin/8.md) | 스프링에서 빈을 등록하는 방법  |  | ⭐ |
 | | 테스트 코드에서는 왜 필드 주입을 사용하는가?  | | |
