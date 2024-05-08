@@ -2,8 +2,8 @@
 
 | 날짜 | 내용 | 완료 | 중요 |
 |--------|--------|--------|--------|
-| 📆[24.04.30 THU](https://github.com/nayonsoso/WIL/blob/main/level2/2-room-escape-member/1.md) |  |  |  |
-| 📆[24.05.01 FRI](https://github.com/nayonsoso/WIL/blob/main/level2/2-room-escape-member/2.md) |  |  |  |
+| 📆[24.04.30 THU](https://github.com/nayonsoso/WIL/blob/main/level2/2-room-escape-member/1.md) | Servlet과 ServletContainer |  |  |
+| 📆[24.05.01 FRI](https://github.com/nayonsoso/WIL/blob/main/level2/2-room-escape-member/2.md) | SpringMVC와 DispatcherServlet |  |  |
 | 📆[24.05.02 MON](https://github.com/nayonsoso/WIL/blob/main/level2/2-room-escape-member/3.md) |  |  |  |
 | 📆[24.05.03 TUE](https://github.com/nayonsoso/WIL/blob/main/level2/2-room-escape-member/4.md) |  |  |  |
 | 📆[24.05.06 THU](https://github.com/nayonsoso/WIL/blob/main/level2/2-room-escape-member/5.md) |  |  |  |
