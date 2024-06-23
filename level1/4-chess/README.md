@@ -4,7 +4,7 @@
 |--------|--------|--------|--------|
 | 📆[24.03.19 TUE](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess/1.md) | JDBC란 | ✅ |  |
 |  | JDBC를 사용하면 어떻게 벤더사와 관계 없이 자바 코드를 작성할 수 있는가? | ✅ | |
-| 📆[24.03.20 WED](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess/2.md) | autocloseable과 try-with-resource | |  |  
+| 📆[24.03.20 WED](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess/2.md) | autocloseable과 try-with-resource | ✅ |  |  
 | 📆[24.03.21 THU](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess/3.md) | git의 체리콕 | ✅ |  |
 | 📆[24.03.22 FRI](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess/4.md) | 표준 예외의 종류 | |  |
 | 📆[24.03.25 MON](https://github.com/nayonsoso/WIL/blob/main/level1/4-chess/5.md) | CheckedException과 UncheckedException의 차이 | |  |
