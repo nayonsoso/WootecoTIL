@@ -22,8 +22,14 @@
 | Room escape ??? | JPA, Slice Test | [24.05.14 ~ 24.05.27]() |
 | Room escape ??? | Acceptance Test | [24.05.28 ~ 24.06.10]() |
 
-
 <br>
+
+### Level 3 : Project
+
+| Sprint Goal | Date |
+|--------|------|
+| 기획 |[24.07.02 ~ 24.07.12](level3/sprint1-retrospect.md)| 
+
 <br>
 <br>
 
